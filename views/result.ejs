@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+
+  <!-- Container for Product Comparison -->
+  <div class="container">
+    <h2>Product Prices</h2>
+    <div class="product-boxes">
+      <div class="product-box">
+        <img src="#" alt="Amazon Product">
+        <p class="product-name">Amazon Product</p>
+        <p class="product-price">$100</p>
+        <p class="website-name">Amazon</p>
+      </div>
+      <div class="product-box">
+        <img src="#" alt="Flipkart Product">
+        <p class="product-name">Flipkart Product</p>
+        <p class="product-price">$95</p>
+        <p class="website-name">Flipkart</p>
+      </div>
+      <div class="product-box">
+        <img src="#" alt="Snapdeal Product">
+        <p class="product-name">Snapdeal Product</p>
+        <p class="product-price">$90</p>
+        <p class="website-name">Snapdeal</p>
+      </div>
+      <div class="product-box">
+        <img src="#" alt="Ajio Product">
+        <p class="product-name">Ajio Product</p>
+        <p class="product-price">$85</p>
+        <p class="website-name">Ajio</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Graph for Past Data Comparison -->
+  <div class="graph-container">
+    <h2>Past Data Comparison</h2>
+    <canvas id="priceGraph"></canvas>
+    <div class="time-buttons">
+      <button onclick="fetchData('1day')">1 Day</button>
+      <button onclick="fetchData('1month')">1 Month</button>
+      <button onclick="fetchData('6months')">6 Months</button>
+      <button onclick="fetchData('1year')">1 Year</button>
+    </div>
+  </div>
+
+<%- include("partials/footer.ejs") %>
